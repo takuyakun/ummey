@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
@@ -10,7 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Welcome to UMMEY!"
+      flash[:success] = 'Welcome to UMMEY!'
       redirect_to @user
     else
       render 'new'
@@ -20,7 +22,7 @@ end
 
 private
 
- def user_params
+def user_params
   params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
- end
+                               :password_confirmation)
+end
