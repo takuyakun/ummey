@@ -1,9 +1,8 @@
-
 default: &default
   adapter: postgresql
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
+  username: takuya
   password: akapei9351
   host: localhost
   timeout: 5000
