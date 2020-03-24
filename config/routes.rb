@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'home#top'
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
+  post '/guest_login', to: 'sessions#guest_login'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
