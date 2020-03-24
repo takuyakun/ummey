@@ -21,6 +21,16 @@ class SessionsController < ApplicationController
     end
   end
 
+  def guest_login
+    user = User.find_or_create_by(email: 'guest@example.com') do |user|
+      user.name = "GuestUser"
+      user.password = SecureRandom.urlsafe_base64
+    end
+    session[:user_id] = user.id
+    redirect_to users_url
+    flash[:notice] = "ゲストユーザーとしてログインしました"
+  end
+
   def destroy
     log_out if logged_in?
     redirect_to root_url

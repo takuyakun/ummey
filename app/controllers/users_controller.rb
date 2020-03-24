@@ -6,11 +6,12 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.all
+    @users = User.all.page(params[:page])
   end
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.page(params[:page])
   end
 
   def new
@@ -43,7 +44,7 @@ class UsersController < ApplicationController
     flash[:success] = "User deleted"
     redirect_to users_url
   end
-
+  
 private
 
  def user_params

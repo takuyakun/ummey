@@ -1,4 +1,6 @@
+<% provide(:title, "ホーム") %>
 <div class="row">
  <h1>登録して美味しい店をチェックしよう</h1>
  <%= link_to "始める", signup_path, class: "btn btn-primary" %>
+ <%= link_to "かんたんログイン", "/guest_login", method: :post, class: "btn btn-primary" %>
 </div>
