@@ -6,9 +6,17 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+     body {
+          background-image: url(assets/ステーキ.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center center; 
+     }
+    </style>
   </head>
 
-  <body class="limited">
+  <body>
   <%= render 'layouts/header' %>
   <div class="container">
     <% flash.each do |message_type, message| %>
