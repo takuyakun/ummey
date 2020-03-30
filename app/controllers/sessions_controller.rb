@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
       user.password = SecureRandom.urlsafe_base64
     end
     session[:user_id] = user.id
-    redirect_to users_url
+    redirect_to microposts_path
     flash[:notice] = "ゲストユーザーとしてログインしました"
   end
 
