@@ -14,9 +14,11 @@
 
  @import "bootstrap";
 
-.limited {
+body {
      padding-top: 70px;
+}
 
+.toppage {
      background-image: url(ステーキ.jpg);
      background-size: cover;
      background-attachment: fixed;
