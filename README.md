@@ -1,14 +1,17 @@
-# UMMEY(h1)
+## UMMEY
 現在ポートフォリオとして作成中の飲食店投稿SNSです
 美味しかったお店を投稿・共有できます
-# URL(h1)
+
+## URL
+https://fathomless-atoll-13055.herokuapp.com/
 ログインページからおためしログインをクリックで、ゲストアカウントとしてログインできます
 ゲストユーザーのみプロフィール情報を編集不可に設定しています
-# 使用技術(h1)
+
+## 使用技術
 Ruby 2.7.0, Rails 5.2.4.1
-webpacker: SASS,Bootstrap4,JQuery
-nginx,puma
-# 機能一覧(h1)
+webpacker: SASS,Bootstrap4,JQuery,puma
+
+## 機能一覧
 管理ユーザー機能(ユーザー、投稿を削除)
 ユーザー登録,ログイン,編集機能
 画像記事投稿、削除機能
