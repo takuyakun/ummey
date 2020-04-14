@@ -3,7 +3,7 @@
 美味しかったお店を投稿・共有できます
 
 ## URL
-https://fathomless-atoll-13055.herokuapp.com/
+https://fathomless-atoll-13055.herokuapp.com/  
 ログインページからおためしログインをクリックで、ゲストアカウントとしてログインできます
 ゲストユーザーのみプロフィール情報を編集不可に設定しています
 
