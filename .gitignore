@@ -32,4 +32,5 @@
 
 # アップロードされたテスト画像を無視する
 /public/uploads
-carrier_wave.rb
+
+config/initializers/carrier_wave.rb
